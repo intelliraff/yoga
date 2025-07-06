@@ -1,0 +1,320 @@
+import React, { useState } from "react";
+import "./Gallery.css";
+
+const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const milestones = [
+    {
+      year: "2013",
+      text: "2013 Hyde Park (Central London) First Yoga session in public by Hindu Swayamsevak Sangh UK.",
+    },
+    {
+      year: "2014",
+      text: "2014, 21st June - International Yoga Day (IYD) started by Shri Narendra Modi, 193 Countries agreed to participate",
+    },
+    {
+      year: "2016",
+      text: "2016 (IYD) took place at Shaard 82 floor 5 AM",
+    },
+    {
+      year: "2017",
+      text: "2017 (IYD) took place at Trafalgar Square",
+    },
+    {
+      year: "2018",
+      text: "2018 First Research paper was presented",
+    },
+  ];
+
+  const galleryItems = [
+    {
+      id: 1,
+      image:
+        "/images/G1.png",
+      title: "Youtube Link",
+      category: "video",
+    },
+    {
+      id: 2,
+      image:
+        "/images/G2.png",
+      title: "Youtube Link",
+      category: "video",
+    },
+    {
+      id: 3,
+      image:
+        "/images/G3.png",
+      title: "Youtube Link",
+      category: "video",
+    },
+    {
+      id: 4,
+      image:
+        "/images/G4.png",
+      title: "Youtube Link",
+      category: "video",
+    },
+    {
+      id: 5,
+      image:
+        "/images/G5.png",
+      title: "Suryanamaskar",
+      category: "practice",
+    },
+    {
+      id: 6,
+      image:
+        "/images/G6.png",
+      title: "Yoga Ashan",
+      category: "practice",
+    },
+    {
+      id: 7,
+      image:
+        "/images/G7.png",
+      title: "Hyde Park",
+      category: "location",
+    },
+    {
+      id: 8,
+      image:
+        "/images/G8.png",
+      title: "Hyde Park",
+      category: "location",
+    },
+    {
+      id: 9,
+      image:
+        "/images/G9.png",
+      title: "Tower Bridge",
+      category: "location",
+    },
+    {
+      id: 10,
+      image:
+        "/images/G10.png",
+      title: "Shard",
+      category: "location",
+    },
+    {
+      id: 11,
+      image:
+        "/images/G11.png",
+      title: "Woolwich",
+      category: "location",
+    },
+    {
+      id: 12,
+      image:
+        "/images/G12.png",
+      title: "Tarafalgar Square",
+      category: "location",
+    },
+  ];
+
+  const handleImageView = (item) => {
+    setSelectedImage(item);
+  };
+
+  const handleImageExpand = (item) => {
+    // Open image in new tab or modal
+    window.open(item.image, "_blank");
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
+  return (
+    <div className="gallery-page">
+      {/* Hero Section */}
+      <section className="gallery-hero">
+        <div className="container">
+          <h1 className="hero-title">Important Milestones in the past</h1>
+        </div>
+      </section>
+
+      {/* Milestones Timeline */}
+      <section className="milestones-section">
+        <div className="container">
+          <div className="milestones-timeline">
+            {milestones.map((milestone, index) => (
+              <div
+                key={index}
+                className={`milestone-card milestone-${index + 1}`}
+              >
+                <p className="milestone-text">{milestone.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Grid */}
+      <section className="gallery-grid-section">
+        <div className="container">
+          <div className="gallery-grid">
+            {galleryItems.map((item) => (
+              <div key={item.id} className="gallery-item">
+                <div className="gallery-image-container">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="gallery-image"
+                  />
+
+                  {/* YouTube Play Button for video items */}
+                  {item.category === "video" && (
+                    <div className="youtube-overlay">
+                      <svg
+                        className="youtube-icon"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50" fill="#FF0000" />
+                        <polygon points="35,25 35,75 75,50" fill="white" />
+                      </svg>
+                    </div>
+                  )}
+
+                  {/* Action Buttons */}
+                  <div className="gallery-actions">
+                    <button
+                      className="action-btn view-btn"
+                      onClick={() => handleImageView(item)}
+                      aria-label="View image"
+                    >
+                      <svg
+                        width="26"
+                        height="18"
+                        viewBox="0 0 26 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M13 0C7.363 0 2.555 3.445 0 8.5C2.555 13.555 7.363 17 13 17C18.637 17 23.445 13.555 26 8.5C23.445 3.445 18.637 0 13 0ZM13 14.167C9.596 14.167 6.833 11.404 6.833 8C6.833 4.596 9.596 1.833 13 1.833C16.404 1.833 19.167 4.596 19.167 8C19.167 11.404 16.404 14.167 13 14.167ZM13 3.5C10.513 3.5 8.5 5.513 8.5 8C8.5 10.487 10.513 12.5 13 12.5C15.487 12.5 17.5 10.487 17.5 8C17.5 5.513 15.487 3.5 13 3.5Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      className="action-btn expand-btn"
+                      onClick={() => handleImageExpand(item)}
+                      aria-label="Expand image"
+                    >
+                      <svg
+                        width="20"
+                        height="15"
+                        viewBox="0 0 20 15"
+                        fill="none"
+                      >
+                        <path d="M19 8H14V13H12V8H7L13 2L19 8Z" fill="black" />
+                        <path d="M1 8H6V13H8V8H13L7 2L1 8Z" fill="black" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="gallery-item-footer">
+                  <h3 className="gallery-item-title">{item.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="image-modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              ×
+            </button>
+            <img
+              src={selectedImage.image}
+              alt={selectedImage.title}
+              className="modal-image"
+            />
+            <div className="modal-info">
+              <h3>{selectedImage.title}</h3>
+              <p>Category: {selectedImage.category}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Call to Action */}
+      <section className="cta-section">
+        <div className="cta-container">
+          <h2 className="cta-title">Take the next step in your yoga journey</h2>
+          <p className="cta-description">
+            Be part of a transformative journey for yourself and the next
+            generation.
+          </p>
+          <button className="cta-button">Join Now</button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-section">
+            <h3 className="footer-title">Yog-Kulam</h3>
+            <p className="footer-description">
+              Yoga means Union; Kulam means centre of education and excellence,
+              like Guru-Kulam.
+            </p>
+          </div>
+
+          <div className="footer-section">
+            <h3 className="footer-title">Useful</h3>
+            <ul className="footer-links">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about">About Us</a>
+              </li>
+              <li>
+                <a href="/training">Why Yog-Kulam</a>
+              </li>
+              <li>
+                <a href="/upcoming">Workshop</a>
+              </li>
+              <li>
+                <a href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3 className="footer-title">Contact Us</h3>
+            <div className="footer-contact">
+              <p>Sewa UK 110 High St, Edgware HA8 7HF</p>
+              <p>Phone: +44(0) 7564 674 669</p>
+              <p>Email: info@yog-kulam.org</p>
+            </div>
+          </div>
+
+          <div className="footer-section">
+            <h3 className="footer-title">Our Newsletter</h3>
+            <p className="newsletter-text">Yog-Kulam</p>
+            <div className="newsletter-signup">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="newsletter-input"
+              />
+              <button className="newsletter-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Gallery;
