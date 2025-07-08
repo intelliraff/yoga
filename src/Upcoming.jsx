@@ -9,7 +9,7 @@ const Upcoming = () => {
       id: 1,
       title: "Sunrise Yoga Session",
       image:
-        "/images/u1.webp",
+        "https://media.istockphoto.com/id/1205575762/photo/upcoming-events.webp?a=1&b=1&s=612x612&w=0&k=20&c=8w9FLqnZmBLWHp272Id4vh_2ZXTXBgUiA7R192Muz2o=",
       date: "March 25, 2024",
       time: "6:00 AM - 7:30 AM",
       location: "Beachfront Park",
@@ -20,7 +20,7 @@ const Upcoming = () => {
       id: 2,
       title: "Meditation Workshop",
       image:
-        "/images/u2.png",
+        "https://media.istockphoto.com/id/1205575762/photo/upcoming-events.webp?a=1&b=1&s=612x612&w=0&k=20&c=8w9FLqnZmBLWHp272Id4vh_2ZXTXBgUiA7R192Muz2o=",
       date: "March 28, 2024",
       time: "7:00 PM - 9:00 PM",
       location: "Yoga Studio Downtown",
@@ -31,7 +31,7 @@ const Upcoming = () => {
       id: 3,
       title: "Family Yoga Day",
       image:
-        "/images/u2.png",
+        "https://media.istockphoto.com/id/1205575762/photo/upcoming-events.webp?a=1&b=1&s=612x612&w=0&k=20&c=8w9FLqnZmBLWHp272Id4vh_2ZXTXBgUiA7R192Muz2o=",
       date: "April 2, 2024",
       time: "10:00 AM - 12:00 PM",
       location: "Community Center",
@@ -42,7 +42,7 @@ const Upcoming = () => {
       id: 4,
       title: "Advanced Asana Practice",
       image:
-        "/images/u3.png",
+        "https://media.istockphoto.com/id/1205575762/photo/upcoming-events.webp?a=1&b=1&s=612x612&w=0&k=20&c=8w9FLqnZmBLWHp272Id4vh_2ZXTXBgUiA7R192Muz2o=",
       date: "April 5, 2024",
       time: "4:00 PM - 6:00 PM",
       location: "Rooftop Studio",

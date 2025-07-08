@@ -6,6 +6,11 @@ import Contact from "./Contact";
 import Donation from "./Donation";
 import Gallery from "./Gallery";
 import "./App.css";
+import yogaHero from './assets/yoga-hero-bg.png';
+import dannam from './assets/dannam.png';
+
+
+
 
 const App = () => {
   const location = useLocation();
@@ -110,7 +115,7 @@ const HomePage = () => {
       <section className="hero-section">
         <div className="hero-background">
           <img
-            src="/images/yoga-hero-bg.png"
+            src={yogaHero}
             alt="Yoga Hero Background"
             className="hero-bg-image"
           />
@@ -211,7 +216,8 @@ const HomePage = () => {
             </div>
             <div className="about-image">
               <img
-                src="/images/abt-us-medi.png"
+                /*src="https://plus.unsplash.com/premium_photo-1669446008800-9a124b0fd3a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8eW9nYXxlbnwwfHwwfHx8MA%3D%3D"*/
+                src={dannam}
                 alt="About us meditation"
                 className="about-img"
               />
@@ -226,7 +232,7 @@ const HomePage = () => {
           <div className="mvp-grid">
             <div className="mvp-card">
               <img
-                src="/images/our-miss.png"
+                src="https://images.unsplash.com/photo-1582106316415-d02d4d0e9066?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Our Mission"
                 className="mvp-image"
               />
@@ -242,7 +248,7 @@ const HomePage = () => {
 
             <div className="mvp-card">
               <img
-                src="/images/our-plan.png"
+                src="https://images.unsplash.com/photo-1717821552922-61e18814a44a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2slMjBzdHJldGNoJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Our Plan"
                 className="mvp-image"
               />
@@ -258,7 +264,7 @@ const HomePage = () => {
 
             <div className="mvp-card">
               <img
-                src="/images/our-vis.png"
+                src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8eW9nYSUyMHBvc2VzfGVufDB8fDB8fHww"
                 alt="Our Vision"
                 className="mvp-image"
               />
@@ -281,7 +287,7 @@ const HomePage = () => {
         <div className="container">
           <div className="cta-content">
             <img
-              src="/images/j-u-b.png"
+              src="https://media.istockphoto.com/id/637872606/photo/woman-doing-yoga-asana-natarajasana-outdoors-on-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=cZw8mnhieNznajlkN388sfDfE1mS8RbAHREn7zRdcvw="
               alt="Join Us Banner"
               className="cta-image"
             />
@@ -385,7 +391,7 @@ const HomePage = () => {
             <div className="program-detail-card">
               <div className="program-image-container">
                 <img
-                  src="/images/Happy-yoga.png"
+                  src="https://media.istockphoto.com/id/538353314/photo/women-meditating-pastel-on-high-mountain-in-sunset-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=bm8jsOS2qMCFC4kqV54rbipbrcrsy8QOXRJv2uYRScM="
                   alt="Happy Yoga"
                   className="program-image"
                 />
@@ -403,7 +409,7 @@ const HomePage = () => {
             <div className="program-detail-card">
               <div className="program-image-container">
                 <img
-                  src="/images/breathe-yoga.png"
+                  src="https://media.istockphoto.com/id/1277689627/photo/senior-man-in-public-park.webp?a=1&b=1&s=612x612&w=0&k=20&c=jmGF7PajdnpVPOdTejo0q0AB_-9sgvKq_5xpU4iKf4s="
                   alt="Breathe Yoga"
                   className="program-image"
                 />
@@ -422,7 +428,7 @@ const HomePage = () => {
             <div className="program-detail-card">
               <div className="program-image-container">
                 <img
-                  src="/images/tt.png"
+                  src="https://media.istockphoto.com/id/855913958/photo/the-days-of-excuses-are-behind-them.webp?a=1&b=1&s=612x612&w=0&k=20&c=hY1w2XHyibbStNiktKi-kfIOAQkSDGmc6Gr62mA_koM="
                   alt="Teacher Training"
                   className="program-image"
                 />
@@ -451,7 +457,7 @@ const HomePage = () => {
           <div className="events-content">
             <div className="event-images">
               <img
-                src="/images/apply.png"
+                src="https://media.istockphoto.com/id/1304571085/photo/portrait-of-a-beautiful-woman-training-at-home-and-watching-online-lessons-in-the-digital.webp?a=1&b=1&s=612x612&w=0&k=20&c=HHoY8hoLPMHbsNBS2xm1hUxUL23TjxUIDK0zRpr6Rcs="
                 alt="Event 1"
                 className="event-image"
               />
@@ -476,12 +482,12 @@ const HomePage = () => {
 
             <div className="event-images-right">
               <img
-                src="/images/ry1.png"
+                src="https://images.unsplash.com/photo-1666478042293-17ea55f33b52?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Routine Yoga 1"
                 className="routine-image"
               />
               <img
-                src="/images/ry2.png"
+                src="https://images.unsplash.com/photo-1659176988433-4bb271684f28?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z3ltJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Routine Yoga 2"
                 className="routine-image"
               />

@@ -48,7 +48,7 @@ const Contact = () => {
             </div>
             <div className="hero-image">
               <img
-                src="/images/c1.webp"
+                src="https://images.unsplash.com/photo-1621732560007-ac654b4b3b6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Yoga pose"
                 className="hero-img"
               />

@@ -1,6 +1,20 @@
 import React, { useState } from "react";
 import "./Gallery.css";
 
+import G1 from "./assets/G1.png";
+import G2 from "./assets/G2.png";
+import G3 from "./assets/G3.png";
+import G4 from "./assets/G4.png";
+import G5 from "./assets/G5.png";
+import G6 from "./assets/G6.png";
+import G7 from "./assets/G7.png";
+import G8 from "./assets/G8.png";
+import G9 from "./assets/G9.png";
+import G10 from "./assets/G10.png";
+import G11 from "./assets/G11.png";
+import G12 from "./assets/G12.png";
+
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -31,84 +45,84 @@ const Gallery = () => {
     {
       id: 1,
       image:
-        "/images/G1.png",
+        G1,
       title: "Youtube Link",
       category: "video",
     },
     {
       id: 2,
       image:
-        "/images/G2.png",
+        G2,
       title: "Youtube Link",
       category: "video",
     },
     {
       id: 3,
       image:
-        "/images/G3.png",
+        G3,
       title: "Youtube Link",
       category: "video",
     },
     {
       id: 4,
       image:
-        "/images/G4.png",
+        G4,
       title: "Youtube Link",
       category: "video",
     },
     {
       id: 5,
       image:
-        "/images/G5.png",
+        G5,
       title: "Suryanamaskar",
       category: "practice",
     },
     {
       id: 6,
       image:
-        "/images/G6.png",
+        G6,
       title: "Yoga Ashan",
       category: "practice",
     },
     {
       id: 7,
       image:
-        "/images/G7.png",
+        G7,
       title: "Hyde Park",
       category: "location",
     },
     {
       id: 8,
       image:
-        "/images/G8.png",
+        G8,
       title: "Hyde Park",
       category: "location",
     },
     {
       id: 9,
       image:
-        "/images/G9.png",
+        G9,
       title: "Tower Bridge",
       category: "location",
     },
     {
       id: 10,
       image:
-        "/images/G10.png",
+        G10,
       title: "Shard",
       category: "location",
     },
     {
       id: 11,
       image:
-        "/images/G11.png",
+        G11,
       title: "Woolwich",
       category: "location",
     },
     {
       id: 12,
       image:
-        "/images/G12.png",
+        G12,
       title: "Tarafalgar Square",
       category: "location",
     },

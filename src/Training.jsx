@@ -1,5 +1,12 @@
 import "./Training.css";
 
+import mind from "./assets/mind.png";
+import deepsleep from "./assets/deepsle.png";
+import sunsal from "./assets/sunsal.png";
+import yogastress from "./assets/stress.png";
+import moonfull from "./assets/moonfull.png";
+import jub from "./assets/j-u-b.png";
+
 const Training = () => {
   return (
     <div className="training-page">
@@ -54,7 +61,8 @@ const Training = () => {
       <section className="featured-image-section">
         <div className="featured-image-container">
           <img
-            src="/images/tra.webp"
+            /*src="https://images.unsplash.com/photo-1588040217484-7d484d97dbe4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWluZGZ1bCUyMG1vcm5pbmclMjB5b2dhfGVufDB8fDB8fHww"*/
+            src={jub}
             alt="Yoga pose meditation"
             className="featured-image"
           />
@@ -69,7 +77,8 @@ const Training = () => {
             <div className="course-card">
               <div className="course-image-wrapper">
                 <img
-                  src="/images/mind.png"
+                  /*src="https://images.unsplash.com/photo-1588040217484-7d484d97dbe4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWluZGZ1bCUyMG1vcm5pbmclMjB5b2dhfGVufDB8fDB8fHww"*/
+                  src={mind}
                   alt="Mindful Morning Yoga"
                   className="course-image"
                 />
@@ -165,7 +174,8 @@ const Training = () => {
             <div className="course-card">
               <div className="course-image-wrapper">
                 <img
-                  src="/images/deepsle.png"
+                  /*src="https://images.unsplash.com/photo-1723406251893-88cfd80c566b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVlcCUyMHNsZWVwJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D"*/
+                  src={deepsleep}
                   alt="Deep Sleep Yoga Nidra"
                   className="course-image"
                 />
@@ -261,7 +271,8 @@ const Training = () => {
             <div className="course-card">
               <div className="course-image-wrapper">
                 <img
-                  src="/images/sunsal.png"
+                  /*src="https://plus.unsplash.com/premium_photo-1710516483702-ff9edaf2f7f9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3VuJTIwc2FsdXRhdGlvbiUyMG1hc3Rlcnl8ZW58MHx8MHx8fDA%3D"*/
+                  src={sunsal}
                   alt="Sun Salutation Mastery"
                   className="course-image"
                 />
@@ -357,7 +368,8 @@ const Training = () => {
             <div className="course-card">
               <div className="course-image-wrapper">
                 <img
-                  src="/images/stress.png"
+                  /*src="https://images.unsplash.com/photo-1630225760711-ac8eaa0c8947?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHlvZ2ElMjBmb3IlMjBzdHJlc3MlMjByZWxpZWZ8ZW58MHx8MHx8fDA%3D"*/
+                  src={yogastress}
                   alt="Yoga for Stress Relief"
                   className="course-image"
                 />
@@ -453,7 +465,7 @@ const Training = () => {
             <div className="course-card">
               <div className="course-image-wrapper">
                 <img
-                  src="/images/power.png"
+                  src="https://images.unsplash.com/photo-1640262653851-103cbaf802d5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG93ZXIlMjB5b2dhJTIwZm9yJTIwc3RyZW5ndGh8ZW58MHx8MHx8fDA%3D"
                   alt="Power Yoga for Strength"
                   className="course-image"
                 />
@@ -549,7 +561,7 @@ const Training = () => {
             <div className="course-card">
               <div className="course-image-wrapper">
                 <img
-                  src="/images/moonfull.png"
+                  src={moonfull}
                   alt="Full Moon Meditation"
                   className="course-image"
                 />

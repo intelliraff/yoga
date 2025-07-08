@@ -57,52 +57,52 @@ const Registration = () => {
           {/* Left Side Images */}
           <div className="images-sidebar">
             <img
-              src="/images/R1.png"
+              src="https://plus.unsplash.com/premium_photo-1661604445845-4c75a36cb93b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R2.png"
+              src="https://plus.unsplash.com/premium_photo-1661604440767-cfc4cdd63d18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R3.png"
+              src="https://plus.unsplash.com/premium_photo-1663047783710-2850204d003f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R4.png"
+              src="https://plus.unsplash.com/premium_photo-1663047282991-84b691885f54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R5.png"
+              src="https://plus.unsplash.com/premium_photo-1666283137652-9f5425ef7bc9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R6.png"
+              src="https://plus.unsplash.com/premium_photo-1661598599843-8d98b0691372?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R7.png"
+              src="https://images.unsplash.com/photo-1593164842249-d74fc06dae05?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R8.png"
+              src="https://images.unsplash.com/photo-1717821681365-36b0da044a75?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R9.png"
+              src="https://images.unsplash.com/photo-1717820914668-2b93d2e764f3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
             <img
-              src="/images/R10.png"
+              src="https://images.unsplash.com/photo-1717839339049-2aba90aaabc1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Yoga pose"
               className="yoga-img"
             />
