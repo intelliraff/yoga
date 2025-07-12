@@ -22,6 +22,7 @@ const Training = () => {
             offerings empower you to grow on your own terms—physically,
             mentally, and spiritually.
           </p>
+          <br></br>
           <button className="find-course-btn">Find Your Course</button>
         </div>
       </section>
@@ -666,66 +667,49 @@ const Training = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer-section">
-        <div className="footer-container">
-          <div className="footer-columns">
-            <div className="footer-column">
-              <h3 className="footer-title">Yog-Kulam</h3>
-              <p className="footer-description">
-                Yoga means Union; Kulam means centre of education and
-                excellence, like Guru-Kulam.
+            {/* Footer */}
+            <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section">
+              <h4>Yog-Kulam</h4>
+              <p>Yoga means Union;<br></br> Kulam means center <br></br>of education and <br></br>excellence, like <br></br>Guru-Kulam</p>
+            </div>
+
+            <div className="footer-section">
+              <h4>Useful</h4>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Why</li>
+                <li>Workshop</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            <div className="footer-section">
+              <h4>Contact Us</h4>
+              <p>
+                Sewa UK 110 High St, Edgware HA8 7HF
+                <br />
+                Phone: +44(0) 7564 674 669
+                <br />
+                Email: info@yog-kulam.org
               </p>
             </div>
 
-            <div className="footer-column">
-              <h3 className="footer-title">Useful</h3>
-              <div className="footer-links">
-                <a href="#" className="footer-link">
-                  Home
-                </a>
-                <a href="#" className="footer-link">
-                  About Us
-                </a>
-                <a href="#" className="footer-link">
-                  Why Yog-Kulam
-                </a>
-                <a href="#" className="footer-link">
-                  Workshop
-                </a>
-                <a href="#" className="footer-link">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-
-            <div className="footer-column">
-              <h3 className="footer-title">Contact Us</h3>
-              <div className="footer-contact">
-                <p>Sewa UK 110 High St, Edgware HA8 7HF</p>
-                <p>Phone: +44(0) 7564 674 669</p>
-                <p>Email: info@yog-kulam.org</p>
-              </div>
-            </div>
-
-            <div className="footer-column">
-              <h3 className="footer-title">Our Newsletter</h3>
-              <p className="newsletter-text">Yog-Kulam</p>
+            <div className="footer-section">
+              <h4>Our Newsletter</h4>
               <div className="newsletter-signup">
-                <input
-                  type="email"
-                  placeholder=""
-                  className="newsletter-input"
-                />
-                <button className="subscribe-btn">Subscribe</button>
+                <input type="email" placeholder="Enter your email" />
+                <button className="cta-button">Subscribe</button>
               </div>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <p className="copyright">
-              © Copyright Yog-Kulum, All Rights Reserved, Designed By
-              Yog-kulam.org
+            <p>
+              © Copyright , All Rights Reserved, Designed By
               <br />
               Privacy Policy | Terms & Conditions
             </p>

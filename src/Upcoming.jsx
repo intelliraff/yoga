@@ -200,15 +200,13 @@ const Upcoming = () => {
       </div>
 
       {/* Footer */}
-      <footer className="footer">
+            {/* Footer */}
+            <footer className="footer">
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
               <h4>Yog-Kulam</h4>
-              <p>
-                Yoga means Union; Kulam means centre of education and
-                excellence, like Guru-Kulam.
-              </p>
+              <p>Yoga means Union;<br></br> Kulam means center <br></br>of education and <br></br>excellence, like <br></br>Guru-Kulam</p>
             </div>
 
             <div className="footer-section">
@@ -216,7 +214,7 @@ const Upcoming = () => {
               <ul>
                 <li>Home</li>
                 <li>About Us</li>
-                <li>Why Yog-Kulam</li>
+                <li>Why</li>
                 <li>Workshop</li>
                 <li>Contact Us</li>
               </ul>
@@ -236,10 +234,18 @@ const Upcoming = () => {
             <div className="footer-section">
               <h4>Our Newsletter</h4>
               <div className="newsletter-signup">
-                <input type="email" placeholder="Yog-Kulam" />
-                <button className="subscribe-btn">Subscribe</button>
+                <input type="email" placeholder="Enter your email" />
+                <button className="cta-button">Subscribe</button>
               </div>
             </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>
+              © Copyright , All Rights Reserved, Designed By
+              <br />
+              Privacy Policy | Terms & Conditions
+            </p>
           </div>
         </div>
       </footer>

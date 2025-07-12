@@ -5,10 +5,12 @@ import Upcoming from "./Upcoming";
 import Contact from "./Contact";
 import Donation from "./Donation";
 import Gallery from "./Gallery";
-import "./App.css";
-import yogaHero from './assets/yoga-hero-bg.png';
+//import yogaHero from './assets/yoga-hero-bg.png';
 import dannam from './assets/dannam.png';
 
+
+import apply from "./assets/apply.png";
+import "./App.css";
 
 
 
@@ -20,6 +22,13 @@ const App = () => {
       {/* Navigation */}
       <nav className="navigation">
         <div className="nav-container">
+        <div className="logo">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/fcca302fc6f092a8d494d7366a93c8de07405d1a?width=162"
+              alt="Yoga Logo"
+              className="logo-image"
+            />
+          </div>
           <div className="nav-links">
             <Link
               to="/"
@@ -112,28 +121,36 @@ const HomePage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section">
+      <main className="hero-section">
         <div className="hero-background">
           <img
-            src={yogaHero}
-            alt="Yoga Hero Background"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/c9e990f2b213a11f88052f0766fca33e657b5781?width=2884"
+            alt="Mountain meditation background"
             className="hero-bg-image"
           />
+          <div className="hero-overlay"></div>
         </div>
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1 className="hero-title">Discover the Yogic Path Within</h1>
-            <p className="hero-subtitle">
-              Ancient Wisdom. Modern Transformation
-            </p>
-            <button className="cta-button">Explore Programs</button>
-          </div>
-          <div className="hero-quote">
-            <div className="quote-bar"></div>
-            <p>Join our global community of seekers and teachers.</p>
+
+        <div className="container">
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1 className="hero-title">Discover the Yogic Path Within</h1>
+              <p className="hero-subtitle">
+                Ancient Wisdom. Modern Transformation
+              </p>
+              <button className="cta-button">Explore Programs</button>
+            </div>
+
+            <div className="hero-quote">
+              <div className="quote-accent"></div>
+              <p className="quote-text">
+                Join our global community of seekers and teachers.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      </main>
+    
 
       {/* Programs Cards */}
       <section className="programs-section">
@@ -457,7 +474,8 @@ const HomePage = () => {
           <div className="events-content">
             <div className="event-images">
               <img
-                src="https://media.istockphoto.com/id/1304571085/photo/portrait-of-a-beautiful-woman-training-at-home-and-watching-online-lessons-in-the-digital.webp?a=1&b=1&s=612x612&w=0&k=20&c=HHoY8hoLPMHbsNBS2xm1hUxUL23TjxUIDK0zRpr6Rcs="
+                /*src="https://media.istockphoto.com/id/1304571085/photo/portrait-of-a-beautiful-woman-training-at-home-and-watching-online-lessons-in-the-digital.webp?a=1&b=1&s=612x612&w=0&k=20&c=HHoY8hoLPMHbsNBS2xm1hUxUL23TjxUIDK0zRpr6Rcs="*/
+                src={apply}
                 alt="Event 1"
                 className="event-image"
               />
@@ -484,12 +502,12 @@ const HomePage = () => {
               <img
                 src="https://images.unsplash.com/photo-1666478042293-17ea55f33b52?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Routine Yoga 1"
-                className="routine-image"
+                className="routine-image1"
               />
               <img
                 src="https://images.unsplash.com/photo-1659176988433-4bb271684f28?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z3ltJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Routine Yoga 2"
-                className="routine-image"
+                className="routine-image2"
               />
             </div>
           </div>
@@ -540,7 +558,8 @@ const HomePage = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <p>means centre of education and excellence, like</p>
+              <h4>Yog-Kulam</h4>
+              <p>Yoga means Union;<br></br> Kulam means center <br></br>of education and <br></br>excellence, like <br></br>Guru-Kulam</p>
             </div>
 
             <div className="footer-section">
