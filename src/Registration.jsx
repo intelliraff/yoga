@@ -350,7 +350,7 @@ const Registration = () => {
                 >
                   Clear Form
                 </button>
-                <button type="submit" className="submit-btn">
+                <button type="submit" className="submit-btnn">
                   Click to Registrations
                 </button>
               </div>

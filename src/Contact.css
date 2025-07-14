@@ -27,6 +27,7 @@
 .hero-text {
   flex: 1;
   max-width: 744px;
+  margin-left:100px;
 }
 
 .hero-title {
@@ -43,8 +44,8 @@
   font-size: 24px;
   font-weight: 400;
   color: #04121f;
-  line-height: 1.5;
-  max-width: 527px;
+  
+  max-width: 744px;
 }
 
 .hero-image {

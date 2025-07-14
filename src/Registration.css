@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 157px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -299,10 +299,11 @@
   gap: 326px;
   justify-content: flex-start;
   margin-top: 40px;
+
 }
 
 .clear-form-btn,
-.submit-btn {
+.submit-btnn {
   display: flex;
   width: 250px;
   height: 68px;
@@ -333,11 +334,12 @@
   transform: translateY(-2px);
 }
 
-.submit-btn {
-  background: #2ab514;
+.submit-btnn {
+  background: #2ade0e;
+  margin-left: 120px;
 }
 
-.submit-btn:hover {
+.submit-btnn:hover {
   background: #249a11;
   transform: translateY(-2px);
 }

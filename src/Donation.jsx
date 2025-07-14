@@ -307,7 +307,7 @@ const Donation = () => {
             Be part of a transformative journey for yourself and the next
             generation.
           </p>
-          <button className="cta-button">Join Now</button>
+          <center><button className="cta-button">Join Now</button></center>
         </div>
       </section>
 

@@ -1,21 +1,84 @@
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Routes, Route, Link, useLocation,useNavigate, Outlet } from "react-router-dom";
 import Training from "./Training";
 import Registration from "./Registration";
 import Upcoming from "./Upcoming";
 import Contact from "./Contact";
 import Donation from "./Donation";
 import Gallery from "./Gallery";
-//import yogaHero from './assets/yoga-hero-bg.png';
+import yogaHero from './assets/yoga-hero-bg.png';
 import dannam from './assets/dannam.png';
 
-
+import logo from './assets/logo.png';
 import apply from "./assets/apply.png";
+import pose1 from "./assets/pose-1.png";
+import pose2 from "./assets/pose-2.png";
+import pose3 from "./assets/pose-3.png";
+import pose4 from "./assets/pose-4.png";
+import pose5 from "./assets/pose-5.png";
+
 import "./App.css";
+/*
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; // optional
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+
+*/
 
 
+     // adjust import as needed
 
 const App = () => {
+
+  const navigate = useNavigate();
   const location = useLocation();
+  /* ---------- refs ---------- */
+  /*
+  const logoRef      = useRef(null);
+  const homeRef      = useRef(null);
+  const trainingRef  = useRef(null);
+  const regRef       = useRef(null);
+  const upcomingRef  = useRef(null);
+  const contactRef   = useRef(null);
+  const donationRef  = useRef(null);
+  const galleryRef   = useRef(null);
+
+  const location = useLocation();             // so we can replay on route‑change
+*/
+  /* ---------- gsap ---------- */
+
+  /*
+  useEffect(() => {
+    // logo: slide in from left
+    gsap.from(logoRef.current, {
+      opacity: 0,
+      x: -30,
+      duration: 0.8,
+      ease: "power3.out",
+    });
+
+    // nav links: fade down in a quick stagger
+    gsap.from(
+      [
+        homeRef.current,
+        trainingRef.current,
+        regRef.current,
+        upcomingRef.current,
+        contactRef.current,
+        donationRef.current,
+        galleryRef.current,
+      ],
+      {
+        opacity: 0,
+        y: -10,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.1,
+        delay: 0.2,
+      }
+    );
+  }, [location.pathname]);  
+
+  */
 
   return (
     <div className="yoga-website">
@@ -24,7 +87,7 @@ const App = () => {
         <div className="nav-container">
         <div className="logo">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/fcca302fc6f092a8d494d7366a93c8de07405d1a?width=162"
+              src={logo}
               alt="Yoga Logo"
               className="logo-image"
             />
@@ -46,7 +109,7 @@ const App = () => {
               to="/registration"
               className={`nav-link ${location.pathname === "/registration" ? "active" : ""}`}
             >
-              Registration Form
+              Registration-Form
             </Link>
             <a href="#" className="nav-link">
               Moodle
@@ -55,7 +118,7 @@ const App = () => {
               to="/upcoming"
               className={`nav-link ${location.pathname === "/upcoming" ? "active" : ""}`}
             >
-              Upcoming Event
+              Upcoming-Event
             </Link>
             <Link
               to="/contact"
@@ -124,7 +187,7 @@ const HomePage = () => {
       <main className="hero-section">
         <div className="hero-background">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/c9e990f2b213a11f88052f0766fca33e657b5781?width=2884"
+            src={yogaHero}
             alt="Mountain meditation background"
             className="hero-bg-image"
           />
@@ -368,30 +431,30 @@ const HomePage = () => {
                   />
                 </svg>
               </div>
-
+              
               <div className="yoga-images-collage">
                 <img
-                  src="/images/leg-cross.png"
+                  src={pose1}
                   alt="Yoga pose 1"
                   className="yoga-image yoga-image-1"
                 />
                 <img
-                  src="/images/yoga-pose-2.png"
+                  src={pose2}
                   alt="Yoga pose 2"
                   className="yoga-image yoga-image-2"
                 />
                 <img
-                  src="/images/pose-3.png"
+                  src={pose3}
                   alt="Yoga pose 3"
                   className="yoga-image yoga-image-3"
                 />
                 <img
-                  src="/images/pose-4.png"
+                  src={pose4}
                   alt="Yoga pose 4"
                   className="yoga-image yoga-image-4"
                 />
                 <img
-                  src="/images/pose-5.png"
+                  src={pose5}
                   alt="Main yoga pose"
                   className="yoga-image yoga-image-main"
                 />
@@ -513,7 +576,19 @@ const HomePage = () => {
           </div>
 
           <div className="events-cta">
-            <button className="cta-button">Click to Registrations</button>
+            {/*
+            <button 
+            className={`cta-button nav-link ${location.pathname === "/registration" ? "active" : ""}`}
+            onClick={() => navigate("/registration")}
+            >
+            Click to Registrations
+            </button>
+            */}
+            <Link to="/registration"
+                className={`cta-button nav-link ${location.pathname === "/registration" ? "active" : ""}`}
+            >
+            Click to Registrations
+            </Link>
           </div>
         </div>
       </section>
@@ -533,7 +608,7 @@ const HomePage = () => {
                 attendance (both online and offline) to qualify for the
                 certification.
               </p>
-              <button className="cta-button">View All</button>
+              <center><button className="cta-button">View All</button></center>
             </div>
           </div>
         </div>
@@ -542,14 +617,16 @@ const HomePage = () => {
       {/* Final CTA */}
       <section className="final-cta">
         <div className="container">
+          <center>
           <div className="final-cta-content">
             <h2>Take the next step in your yoga journey</h2>
             <p>
               Be part of a transformative journey for yourself and the next
               generation.
             </p>
-            <button className="cta-button">Join Now</button>
+            <center><button className="cta-button">Join Now</button></center>
           </div>
+          </center>
         </div>
       </section>
 

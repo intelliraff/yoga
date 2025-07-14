@@ -330,7 +330,7 @@ const Contact = () => {
               <div className="newsletter-signup">
                 <input type="email" placeholder="Enter your email" />
                 <button className="cta-button">Subscribe</button>
-                <h1>hello</h1>
+                
               </div>
             </div>
           </div>

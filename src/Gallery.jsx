@@ -52,7 +52,7 @@ const Gallery = () => {
     {
       id: 2,
       image:
-        G2,
+        G1,
       title: "Youtube Link",
       category: "video",
     },
@@ -268,7 +268,7 @@ const Gallery = () => {
             Be part of a transformative journey for yourself and the next
             generation.
           </p>
-          <button className="cta-button">Join Now</button>
+          <center><button className="cta-button">Join Now</button></center>
         </div>
       </section>
 
