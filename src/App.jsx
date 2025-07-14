@@ -1,4 +1,4 @@
-import { Routes, Route, Link, useLocation,useNavigate, Outlet } from "react-router-dom";
+import { Routes, Route, Link, useLocation, Outlet } from "react-router-dom";
 import Training from "./Training";
 import Registration from "./Registration";
 import Upcoming from "./Upcoming";
@@ -29,7 +29,6 @@ import { gsap } from "gsap";
 
 const App = () => {
 
-  const navigate = useNavigate();
   const location = useLocation();
   /* ---------- refs ---------- */
   /*
