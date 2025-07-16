@@ -955,10 +955,10 @@ body {
 
 .quote-accent {
   width: 2px;
-  height: 64px;
+  height: 90px;
   background: #f96f00;
   flex-shrink: 0;
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
   margin-left: 20%;
 }
 

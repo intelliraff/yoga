@@ -17,122 +17,135 @@ import pose4 from "./assets/pose-4.png";
 import pose5 from "./assets/pose-5.png";
 
 import "./App.css";
-/*
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // optional
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import React, { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-*/
-
-
-     // adjust import as needed
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-
+  
   const location = useLocation();
-  /* ---------- refs ---------- */
-  /*
-  const logoRef      = useRef(null);
-  const homeRef      = useRef(null);
-  const trainingRef  = useRef(null);
-  const regRef       = useRef(null);
-  const upcomingRef  = useRef(null);
-  const contactRef   = useRef(null);
-  const donationRef  = useRef(null);
-  const galleryRef   = useRef(null);
 
-  const location = useLocation();             // so we can replay on route‑change
-*/
-  /* ---------- gsap ---------- */
+  const logoRef = useRef(null);
+  const navLinksRef = useRef([]);
+  const textt1 =useRef(null);
 
-  /*
+  // Clear previous refs to avoid duplication on re-renders
+  navLinksRef.current = [];
+
+  const addToNavLinksRef = (el) => {
+    if (el && !navLinksRef.current.includes(el)) {
+      navLinksRef.current.push(el);
+    }
+  };
+
   useEffect(() => {
-    // logo: slide in from left
-    gsap.from(logoRef.current, {
-      opacity: 0,
-      x: -30,
-      duration: 0.8,
-      ease: "power3.out",
-    });
+    // Animate logo
+    gsap.fromTo(
+      logoRef.current,
+      { x: -50, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1, ease: "power2.out" }
+    );
 
-    // nav links: fade down in a quick stagger
-    gsap.from(
-      [
-        homeRef.current,
-        trainingRef.current,
-        regRef.current,
-        upcomingRef.current,
-        contactRef.current,
-        donationRef.current,
-        galleryRef.current,
-      ],
+    // Animate nav links with stagger
+    gsap.fromTo(
+      navLinksRef.current,
+      { y:-30,  opacity: 0 },
       {
-        opacity: 0,
-        y: -10,
-        duration: 0.6,
-        ease: "power3.out",
-        stagger: 0.1,
-        delay: 0.2,
+        y: 0,
+        opacity: 1,
+        duration: 0.3,
+        stagger: 0.1
       }
     );
-  }, [location.pathname]);  
+    if(textt1.current){
+      gsap.fromTo(
+        textt1.current,
+        { y:-30,  opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.3,
+          
+          }
+      );
+    }    
 
-  */
+  }, []);
+
+  
 
   return (
     <div className="yoga-website">
-      {/* Navigation */}
+      
       <nav className="navigation">
         <div className="nav-container">
         <div className="logo">
-            <img
+        <Link
+              to="/"
+              className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>
+
+<img
               src={logo}
+              ref={logoRef}
+      
               alt="Yoga Logo"
               className="logo-image"
+              
             />
+              </Link>
+            
           </div>
           <div className="nav-links">
             <Link
               to="/"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
             >
               Home
             </Link>
             <Link
               to="/training"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/training" ? "active" : ""}`}
             >
               Training
             </Link>
             <Link
               to="/registration"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/registration" ? "active" : ""}`}
             >
               Registration-Form
             </Link>
-            <a href="#" className="nav-link">
+            <a href="#" ref={addToNavLinksRef} className="nav-link">
               Moodle
             </a>
             <Link
               to="/upcoming"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/upcoming" ? "active" : ""}`}
             >
               Upcoming-Event
             </Link>
             <Link
               to="/contact"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}
             >
               Contact
             </Link>
             <Link
               to="/donation"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/donation" ? "active" : ""}`}
             >
               Donate
             </Link>
             <Link
               to="/gallery"
+              ref={addToNavLinksRef}
               className={`nav-link ${location.pathname === "/gallery" ? "active" : ""}`}
             >
               Gallery
@@ -179,8 +192,136 @@ const App = () => {
   );
 };
 
+
+
+
 const HomePage = () => {
+
+  const location = useLocation();
+
+  
+  
+  const textt1 =useRef(null);
+  const explore=useRef(null);
+  const exploree=useRef(null);
+  const exploreee=useRef(null);
+  const join=useRef(null);
+  const bar=useRef(null);
+
+  // Clear previous refs to avoid duplication on re-renders
+  
+
+  
+
+  useEffect(() => {
+    // Animate logo
+    
+    if(textt1.current){
+      gsap.fromTo(
+        textt1.current,
+        { x:-30,  opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.3,
+          
+          }
+      );
+    }
+    
+    if(explore.current){
+      gsap.fromTo(
+        explore.current,
+        { scale:0 },
+        {
+          scale:1
+        }
+      )
+    }
+
+    if(exploree.current){
+      gsap.fromTo(
+        exploree.current,
+        { scale:0 },
+        {
+          scale:1,
+          scrollTrigger: {
+            trigger: exploree.current,
+            start: "top 90%",
+            end: "top 80%",
+            //scrub: true, // scroll-linked animation
+            //markers: true, // shows markers for debugging
+          },
+        }
+      )
+    }
+
+    if(exploreee.current){
+      gsap.fromTo(
+        exploreee.current,
+        { scale:0 },
+        {
+          scale:1,
+          scrollTrigger: {
+            trigger: exploreee.current,
+            start: "top 90%",
+            end: "top 80%",
+            //scrub: true, // scroll-linked animation
+            //markers: true, // shows markers for debugging
+          },
+        }
+      )
+    }
+
+    if(join.current){
+      gsap.fromTo(
+        join.current,
+        {
+          x:-30, opacity: 0
+        }
+        ,{
+          x:0,
+          opacity:1,
+          duration:0.4
+        }
+      )
+    }
+
+    if(bar.current){
+      gsap.fromTo(
+        bar.current,
+        { scale:0 },
+        {
+          
+          scale:2
+        }
+      )
+    }
+
+
+
+
+    gsap.from("quote-text",{
+      color:"blue",
+      duration:2,
+      delay:1,
+      opacity:0,
+      y:20,
+      stagger:0.5,
+      repeat:-1
+  })
+  }, []);
+
+
+
+
+
+
   return (
+
+
+
+
     <>
       {/* Hero Section */}
       <main className="hero-section">
@@ -196,16 +337,16 @@ const HomePage = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-title">Discover the Yogic Path Within</h1>
+              <h1 ref={textt1} className="hero-title">Discover the Yogic Path Within</h1>
               <p className="hero-subtitle">
                 Ancient Wisdom. Modern Transformation
               </p>
-              <button className="cta-button">Explore Programs</button>
+              <button ref={explore} className="cta-button">Explore Programs</button>
             </div>
 
             <div className="hero-quote">
-              <div className="quote-accent"></div>
-              <p className="quote-text">
+              <div className="quote-accent" ref={bar}></div>
+              <p ref={join} className="quote-text">
                 Join our global community of seekers and teachers.
               </p>
             </div>
@@ -377,7 +518,7 @@ const HomePage = () => {
                 you're a teacher, parent, or yoga enthusiast—there's a place for
                 you.
               </p>
-              <button className="cta-button secondary">Connect with Us</button>
+              <center><button ref={exploree} className="cta-button secondary">Connect with Us</button></center>
             </div>
           </div>
         </div>
@@ -584,7 +725,7 @@ const HomePage = () => {
             </button>
             */}
             <Link to="/registration"
-                className={`cta-button nav-link ${location.pathname === "/registration" ? "active" : ""}`}
+                className={`cta-button nav-link ${location.pathname === "/registration" ? "active" : ""}`} ref={exploreee}
             >
             Click to Registrations
             </Link>
