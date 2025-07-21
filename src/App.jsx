@@ -86,7 +86,7 @@ const App = () => {
               to="/"
               className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>
 
-<img
+            <img
               src={logo}
               ref={logoRef}
       

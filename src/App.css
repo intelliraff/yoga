@@ -975,7 +975,12 @@ body {
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
+    overflow-x: hidden;
+    
+    
   }
+
+  
 
   .header .container {
     flex-direction: column;
@@ -983,6 +988,20 @@ body {
     padding: 1rem;
   }
 
+
+  .hero-text{
+    width:500px;
+  }
+
+  .hero-title{
+    margin-right: 100px;
+  }
+
+  .hero-subtitle{
+    margin-right: 100px;
+  }
+
+ 
   .navigation {
     flex-wrap: wrap;
     gap: 1rem;
@@ -1000,18 +1019,15 @@ body {
     padding: 2rem 0;
   }
 
-  .hero-title {
-    font-size: 40px;
-  }
-
-  .hero-subtitle {
-    font-size: 24px;
+  .quote-accent{
+    visibility: hidden;
   }
 
   .cta-button {
     font-size: 20px;
-    min-width: 250px;
-    padding: 1rem 2rem;
+    width: 100px;
+    margin-left: 15%;
+    
   }
 
   .hero-quote {
@@ -1020,9 +1036,66 @@ body {
   }
 
   .quote-text {
-    font-size: 16px;
-    text-align: left;
+    visibility: hidden;
   }
+
+  .program-card{
+    width: 308px;
+    height: 168px;
+  }
+
+  .card-description{
+    font-size: 15px;
+  }
+
+  .card-badge{
+    
+    font-size:20px;
+  }
+
+  .card-icon{
+    margin:0;
+  }
+  
+
+  svg{
+    height:40px;
+    width:40px;
+    
+  }
+
+
+  .section-header h2{
+    font-size: 30px;
+  }
+
+  .about-text p{
+    font-size: 18px;
+  }
+
+  .about-image{
+    visibility: hidden;
+  }
+
+  .about-section{
+    height:80vh;
+  }
+
+  .mvp-card{
+    height:480px;
+    width:308px;
+  }
+
+  .mvp-content h3{
+    font-size: 30px;
+  }
+
+  .mvp-content p{
+    font-size: 16px;
+  }
+
+
+
 }
 
 /* Tablet Styles */
@@ -1573,6 +1646,9 @@ body {
     right: 10%;
   }
 }
+
+
+
 
 
 
