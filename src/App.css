@@ -1066,11 +1066,11 @@ body {
 
 
   .section-header h2{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .about-text p{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .about-image{
@@ -1078,7 +1078,7 @@ body {
   }
 
   .about-section{
-    height:80vh;
+    height:70vh;
   }
 
   .mvp-card{
@@ -1087,15 +1087,156 @@ body {
   }
 
   .mvp-content h3{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .mvp-content p{
     font-size: 16px;
   }
 
+  .news-content h3, .news-content p{
+    font-size: 16px;
+  }
+
+  .news-banner .cta-button{
+    font-size: 16px;
+    width:100px;
+    height:58px;
+    margin:0;
+  }
+
+  .final-cta-content p{
+    font-size: 16px;
+  }
+
+  .final-cta-content h2{
+    font-size: 20px;
+  }
+
+  .section-header h2{
+    font-size: 20px;
+  }
+
+  .cta-text h2{
+    font-size: 20px;
+  }
+
+  .cta-text p{
+    font-size:16px;
+  }
+
+  .cta-text .cta-button{
+    font-size: 16px;
+    margin:0;
+  }
+
+  .program-detail-card{
+    height: 448px;
+    width:371px;
+    margin-left:15%;
+  }
+
+  .program-image-container{
+    width:100px;
+    height:100px;
+    
+  }
+  .program-image{
+    width:150px;
+    height:150px;
+    border-radius: 90px;
+  
+  }
+  
+  .program-info h3{
+    font-size: 20px;
+  }
+
+  .program-info p{
+    font-size: 16px;
+  }
+
+  .learn-more-btn{
+    font-size: 16px;
+    width:fit-content;
+  }
+
+  .event-image{
+    width:100%;
+    height:100%;
+  }
+
+  .routine-image1, .routine-image2{
+    visibility: hidden;
+  }
+
+  .event-images-right{
+    width:0;
+    height:0;
+  }
+
+  .events-cta .cta-button{
+    margin-left: 25%;
+  }
+
+  .events-section{
+    height:90vh;
+  }
+  
+  .events-section .container{
+    overflow-y: hidden;
+  }
 
 
+  .final-cta-content .cta-button{
+    margin:0;
+    font-size: 16px;
+    
+    height: fit-content;
+  }
+
+  .why-yogkulam-section .container{
+    overflow-y: hidden;
+  }
+
+  .yoga-image-1 , .yoga-image-2 , .yoga-image-3 ,.yoga-image-4{
+    visibility: hidden;
+  }
+
+  .yoga-image{
+    margin-right: 150px;
+  }
+
+  .yoga-images-collage{
+    width:200px;
+    height:200px;
+  }
+
+  .hero-text{
+    margin-left:12%;
+   
+
+  }
+  .why-yogkulam-text p{
+    font-size: 16px;
+  }
+
+  #footer-section1 , #footer-section2 , #footer-section3 , #footer-section4{
+    visibility: hidden;
+  }
+  #footer-section1 , #footer-section2 , #footer-section3 , #footer-section4{
+    width:0%;
+    height: 0%;
+  }
+
+  .footer-content{
+    width: 0;
+    height:0;
+  }
+
+  .container{
+    overflow-y: hidden;
+  }
 }
 
 /* Tablet Styles */

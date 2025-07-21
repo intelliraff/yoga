@@ -684,6 +684,9 @@ const HomePage = () => {
               />
               <div className="event-controls">
                 <button className="event-nav-btn">
+                <Link to="/registration"
+                className={`hehe nav-link ${location.pathname === "/registration" ? "active" : ""}`} ref={exploreee}
+            >
                   <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
                     <circle
                       cx="35"
@@ -697,6 +700,7 @@ const HomePage = () => {
                       fill="#F96F00"
                     />
                   </svg>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -774,12 +778,12 @@ const HomePage = () => {
       <footer className="footer">
         <div className="container">
           <div className="footer-content">
-            <div className="footer-section">
+            <div className="footer-section" id="footer-section1">
               <h4>Yog-Kulam</h4>
               <p>Yoga means Union;<br></br> Kulam means center <br></br>of education and <br></br>excellence, like <br></br>Guru-Kulam</p>
             </div>
 
-            <div className="footer-section">
+            <div className="footer-section" id="footer-section2">
               <h4>Useful</h4>
               <ul>
                 <li>Home</li>
@@ -790,7 +794,7 @@ const HomePage = () => {
               </ul>
             </div>
 
-            <div className="footer-section">
+            <div className="footer-section" id="footer-section3">
               <h4>Contact Us</h4>
               <p>
                 Sewa UK 110 High St, Edgware HA8 7HF
@@ -801,7 +805,7 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="footer-section">
+            <div className="footer-section" id="footer-section4">
               <h4>Our Newsletter</h4>
               <div className="newsletter-signup">
                 <input type="email" placeholder="Enter your email" />
