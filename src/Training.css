@@ -1,456 +1,359 @@
-/* Training Page - Explore Our Yoga Courses */
-
+/* Training Page Styles */
 .training-page {
   width: 100%;
   min-height: 100vh;
+  font-family: "Lato", sans-serif;
   background: #fff;
 }
 
 /* Hero Section */
 .hero-section {
-  padding: 4rem 0 3rem;
-  background: #fff;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #fff7f1 0%, #ffffff 100%);
+  text-align: center;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 2rem;
-  text-align: center;
+  padding: 0 20px;
 }
 
 .hero-title {
   font-family: "Cormorant", serif;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
   color: #04121f;
+  margin-bottom: 25px;
   line-height: 1.2;
-  margin-bottom: 2rem;
 }
 
 .hero-description {
   font-family: "Lato", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
-  color: #04121f;
-  max-width: 1133px;
-  margin: 0 auto 3rem;
-  text-align: center;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .find-course-btn {
   background: #f25c26;
   color: white;
   border: none;
-  border-radius: 30px;
-  padding: 19px 31px;
+  padding: 15px 35px;
+  border-radius: 25px;
   font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(242, 92, 38, 0.3);
 }
 
 .find-course-btn:hover {
   background: #e54a1f;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 92, 38, 0.4);
 }
 
 /* Search Section */
 .search-section {
-  padding: 2rem 0;
-  background: #fff;
+  padding: 30px 0;
+  background: #f8f9fa;
 }
 
 .search-container {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
+  padding: 0 20px;
 }
 
 .search-bar {
   position: relative;
-  width: 100%;
-  max-width: 925px;
-}
-
-.search-input {
-  width: 100%;
-  height: 47px;
-  padding: 12px 43px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  color: #828282;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-icon {
-  position: absolute;
-  left: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
+  margin-right: 15px;
+  color: #828282;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #828282;
 }
 
 /* Featured Image Section */
 .featured-image-section {
-  padding: 3rem 0;
-  background: #fff;
+  padding: 40px 0;
+  background: white;
 }
 
 .featured-image-container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
+  padding: 0 20px;
 }
 
 .featured-image {
   width: 100%;
-  max-width: 409px;
-  height: 419px;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 8px 8px 25px rgba(249, 111, 0, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Courses Section */
 .courses-section {
-  padding: 4rem 0 3rem;
+  padding: 60px 0;
   background: #fff;
 }
 
 .courses-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(555px, 1fr));
-  gap: 2rem;
-  max-width: 1238px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
 }
 
 /* Course Card */
 .course-card {
-  background: #fff7f1;
+  background: white;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .course-image-wrapper {
   position: relative;
-  width: 100%;
-  height: 297px;
+  overflow: hidden;
 }
 
 .course-image {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.05);
 }
 
 .level-badge {
   position: absolute;
-  top: 22px;
-  right: 22px;
-  padding: 7px 17px;
-  border-radius: 30px;
-  background: rgba(249, 111, 0, 0.2);
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 15px;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: rgba(249, 111, 0, 0.7);
-  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .level-badge.beginner {
-  background: rgba(249, 111, 0, 0.2);
-  color: rgba(249, 111, 0, 0.7);
+  background: #4CAF50;
+  color: white;
 }
 
 .level-badge.intermediate {
-  background: rgba(249, 111, 0, 0.2);
-  color: rgba(249, 111, 0, 0.7);
+  background: #FF9800;
+  color: white;
 }
 
 .level-badge.advanced {
-  background: rgba(249, 111, 0, 0.2);
-  color: rgba(249, 111, 0, 0.7);
+  background: #F44336;
+  color: white;
 }
 
 .level-badge.all-levels {
-  background: rgba(249, 111, 0, 0.2);
-  color: rgba(249, 111, 0, 0.7);
+  background: #2196F3;
+  color: white;
 }
 
 /* Course Content */
 .course-content {
-  padding: 2rem;
-  position: relative;
+  padding: 25px;
 }
 
 .course-icon {
-  position: absolute;
-  top: -19px;
-  left: 12px;
-  width: 38px;
-  height: 38px;
+  margin-bottom: 15px;
 }
 
 .course-title {
   font-family: "Lato", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #112734;
-  margin: 1rem 0 1.5rem;
-  padding-left: 53px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #04121f;
+  margin-bottom: 20px;
+  line-height: 1.3;
 }
 
 .course-meta {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 12px;
+  margin-bottom: 25px;
 }
 
 .course-info,
 .instructor-info {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: rgba(17, 39, 52, 0.7);
-  padding-left: 53px;
+  gap: 10px;
 }
 
-.course-info svg,
-.instructor-info svg {
-  width: 38px;
-  height: 38px;
-  margin-left: -53px;
+.course-info span,
+.instructor-info span {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.time-icon,
+.instructor-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .view-details-btn {
-  background: #f25c26;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  padding: 19px 31px;
+  background: transparent;
+  border: 2px solid #f25c26;
+  color: #f25c26;
+  padding: 12px 25px;
+  border-radius: 25px;
   font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: block;
-  margin: 0 auto;
-  width: 295px;
+  width: 100%;
 }
 
 .view-details-btn:hover {
-  background: #e54a1f;
+  background: #f25c26;
+  color: white;
   transform: translateY(-2px);
 }
 
 /* CTA Section */
 .cta-section {
-  padding: 4rem 0;
-  background: #fff;
-}
-
-.cta-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f25c26 0%, #f96f00 100%);
   text-align: center;
 }
 
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .cta-title {
-  font-family: "Lato", sans-serif;
-  font-size: 64px;
+  font-family: "Cormorant", serif;
+  font-size: 36px;
   font-weight: 700;
-  color: #000;
-  line-height: 1.16;
-  margin-bottom: 3rem;
-  max-width: 932px;
-  margin-left: auto;
-  margin-right: auto;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 1.3;
 }
 
 .contact-us-btn {
-  background: #f25c26;
-  color: white;
+  background: white;
+  color: #f25c26;
   border: none;
-  border-radius: 30px;
-  padding: 19px 31px;
+  padding: 15px 35px;
+  border-radius: 25px;
   font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 301px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .contact-us-btn:hover {
-  background: #e54a1f;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
 }
 
 /* Footer */
-.footer-section {
-  background: #04121f;
-  color: white;
-  padding: 2 rem;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.footer-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.footer-title {
-  font-family: "Lato", sans-serif;
-  font-size: 40px;
-  font-weight: 1000;
-  color: #f8f8f6;
-  margin-bottom: 1rem;
-}
-
-.footer-description {
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: white;
-  line-height: 1.5;
-  max-width: 224px;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.footer-link {
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: white;
-  text-decoration: none;
-  line-height: 1.2;
-}
-
-.footer-link:hover {
-  color: #f96f00;
-}
-
-
-.footer-contact p {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  line-height: 1.5;
-}
-
-.newsletter-text {
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.newsletter-signup {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  align-items: center;
-}
-
-.newsletter-input {
-  flex: 1;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 30px;
-  font-size: 15px;
-  max-width: 295px;
-  height: 40px;
-}
-
 .footer {
   background: #04121f;
   color: white;
-  padding: 2rem;
+  padding: 40px 20px;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 30px;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-section h4 {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 1000;
-  margin-bottom: 1.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
   color: #f8f8f6;
 }
 
 .footer-section p {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   color: white;
 }
 
 .footer-section ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-section li {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .footer-section li:hover {
@@ -459,139 +362,144 @@
 
 .newsletter-signup {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 10px;
+  margin-top: 15px;
   align-items: center;
 }
 
 .newsletter-signup input {
   flex: 1;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border: none;
-  border-radius: 30px;
-  font-size: 15px;
-  max-width: 295px;
-  height: 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  max-width: 250px;
 }
 
 .newsletter-signup .cta-button {
-  padding: 15px 30px;
-  height: 50px;
-  font-size: 16px;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid #333;
-}
-
-.footer-bottom p {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.8;
-  color: white;
-}
-
-.subscribe-btn {
+  padding: 10px 20px;
   background: #f25c26;
   color: white;
   border: none;
-  border-radius: 30px;
-  padding: 19px;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+  border-radius: 20px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  width: 120px;
+  transition: background 0.3s ease;
 }
 
-.subscribe-btn:hover {
+.newsletter-signup .cta-button:hover {
   background: #e54a1f;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 20px;
   border-top: 1px solid #333;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.copyright {
+.footer-bottom p {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-  line-height: 1.8;
-  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ccc;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .courses-grid {
-    grid-template-columns: 1fr;
-    max-width: 600px;
-  }
-
-  .hero-title {
-    font-size: 48px;
-  }
-
-  .hero-description {
-    font-size: 20px;
-  }
-
-  .cta-title {
-    font-size: 48px;
-  }
-
-  .footer-columns {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
+  /* Hero Section Mobile */
   .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-description {
-    font-size: 18px;
-    padding: 0 1rem;
-  }
-
-  .cta-title {
-    font-size: 36px;
-  }
-
-  .course-title {
-    font-size: 28px;
-  }
-
-  .course-info,
-  .instructor-info {
-    font-size: 20px;
-  }
-
-  .footer-title {
     font-size: 32px;
   }
 
-  .footer-description,
-  .footer-link,
-  .footer-contact p,
-  .newsletter-text {
-    font-size: 20px;
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 25px;
   }
 
-  .copyright {
+  .find-course-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  /* Search Mobile */
+  .search-bar {
+    padding: 10px 15px;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  /* Featured Image Mobile */
+  .featured-image {
+    height: 200px;
+  }
+
+  /* Courses Grid Mobile */
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .course-card {
+    max-width: 100%;
+  }
+
+  .course-image {
+    height: 180px;
+  }
+
+  .course-content {
+    padding: 20px;
+  }
+
+  .course-title {
     font-size: 18px;
   }
 
-  .footer-columns {
+  .course-meta {
+    gap: 10px;
+  }
+
+  .course-info span,
+  .instructor-info span {
+    font-size: 13px;
+  }
+
+  .view-details-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  /* CTA Section Mobile */
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .contact-us-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  /* Footer Mobile */
+  .footer-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .newsletter-signup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-signup input {
+    width: 100%;
+    max-width: 250px;
   }
 }
 
@@ -601,82 +509,30 @@
   }
 
   .hero-description {
+    font-size: 15px;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-image {
+    height: 160px;
+  }
+
+  .course-content {
+    padding: 15px;
+  }
+
+  .course-title {
     font-size: 16px;
   }
 
   .cta-title {
-    font-size: 28px;
-  }
-
-  .find-course-btn,
-  .contact-us-btn,
-  .view-details-btn {
-    width: 100%;
-    max-width: 280px;
-    padding: 15px 20px;
-    font-size: 20px;
-  }
-
-  .course-card {
-    margin: 0 1rem;
-  }
-
-  .courses-container {
-    padding: 0 1rem;
-  }
-
-  .hero-container,
-  .search-container,
-  .featured-image-container,
-  .cta-container {
-    padding: 0 1rem;
-  }
-
-  .course-title {
     font-size: 24px;
-    padding-left: 0;
-    text-align: center;
   }
 
-  .course-info,
-  .instructor-info {
-    font-size: 18px;
-    padding-left: 0;
-    justify-content: center;
-  }
-
-  .course-info svg,
-  .instructor-info svg {
-    margin-left: 0;
-  }
-
-  .course-icon {
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .footer-title {
-    font-size: 28px;
-  }
-
-  .footer-description,
-  .footer-link,
-  .footer-contact p,
-  .newsletter-text {
-    font-size: 18px;
-  }
-
-  .copyright {
-    font-size: 16px;
-  }
-
-  .newsletter-signup {
-    max-width: 100%;
-  }
-
-  .subscribe-btn {
-    width: 100%;
+  .featured-image {
+    height: 180px;
   }
 }
