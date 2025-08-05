@@ -22,6 +22,7 @@
 
 .hero-content {
   display: flex;
+  align-content: center;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -30,6 +31,9 @@
 .hero-text {
   flex: 1;
   max-width: 600px;
+  align-content: center;
+  margin-left:25%;
+  margin-right: 25%;
 }
 
 .hero-title {
@@ -208,7 +212,7 @@
 
 .form-group label {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  
   font-weight: 600;
   color: #333;
   margin-bottom: 8px;
